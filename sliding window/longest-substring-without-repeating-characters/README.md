@@ -52,6 +52,3 @@ At the last character, moving `left` back to 1 would produce `"bba"`, which is i
 **Time:** O(n) on average, using average O(1) hash lookups.\
 **Auxiliary space:** O(m) for the map, where m is the number of distinct characters in the input. Passing the string by value can additionally copy n characters when called with an lvalue, making the total extra space O(n) in that case.
 
-## Learning note
-
-The learner explored how to shrink a window after a repeated character, keep the longest length, and remember the latest positions without moving `left` backward. The assistant provided this implementation after that discussion. [test.cpp](test.cpp) checks eight cases locally; no accepted online submission is recorded here.
